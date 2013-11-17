@@ -12,6 +12,8 @@ html, body {
 .sidebar {
     width: 300px;
     float: left;
+
+    background: #f3f3f3;
 }
 
 .main {
@@ -22,6 +24,8 @@ html, body {
 
     -moz-box-sizing: border-box;
          box-sizing: border-box;
+
+    background: #fafafa;
 }
 
 .cf:before,
@@ -36,6 +40,7 @@ html, body {
 
 .jungle, .forest {
     position: relative;
+    height: 450px;
 }
 
 .tree {
