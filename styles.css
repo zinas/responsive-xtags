@@ -72,13 +72,3 @@ html, body {
 .tree-2 {background-image: url(images/tree2.png);}
 .tree-3 {background-image: url(images/tree3.png);}
 .tree-4 {background-image: url(images/tree4.png);}
-
-[is=x-nature] {
-    -moz-transition:width 0.01s;
-    -webkit-transition:width 0.01s;
-    -o-transition:width 0.01s;
-    transition:width 0.01s;
-
-    min-height: 50px;
-    background:red;
-}

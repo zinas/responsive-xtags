@@ -34,10 +34,8 @@
             options.methods.respond = function () {
                 var sizes, i, width = this.offsetWidth;
                 if (this.lastWidth && this.lastWidth==width) {
-                    console.log("SAME");
                     return;
                 }
-                console.log("DIFFERENT");
                 for (i in options.queries) {
                     sizes = __getMinMax(i);
                     if (width >= sizes.min && width <= sizes.max) {
