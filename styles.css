@@ -1,0 +1,84 @@
+html, body {
+    margin:0;padding:0;
+}
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    float: left;
+}
+
+.main {
+    float: right;
+    width: 100%;
+    margin-left: -300px;
+    padding-left: 310px;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.jungle, .forest {
+    position: relative;
+}
+
+.tree {
+    width: 128px;
+    height: 128px;
+    background: url() 0 0 no-repeat;
+
+    background-size: contain;
+}
+
+.jungle .tree, .forest .tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.jungle .tree:nth-child(4n+1) {top: 0px; }
+.jungle .tree:nth-child(4n+2) {top: 100px;}
+.jungle .tree:nth-child(4n+3) {top: 200px;}
+.jungle .tree:nth-child(4n+4) {top: 300px;}
+
+.jungle .tree:nth-child(-n+16) {left: 0px; }
+.jungle .tree:nth-child(-n+12) {left: 100px; }
+.jungle .tree:nth-child(-n+8) {left: 200px; }
+.jungle .tree:nth-child(-n+4) {left: 300px; }
+
+
+.forest .tree:nth-child(2) {top:0px;left:100px;}
+.forest .tree:nth-child(3) {top:100px;left:0px;}
+.forest .tree:nth-child(4) {top:100px;left:100px;}
+
+
+.tree-1 {background-image: url(images/tree1.png);}
+.tree-2 {background-image: url(images/tree2.png);}
+.tree-3 {background-image: url(images/tree3.png);}
+.tree-4 {background-image: url(images/tree4.png);}
+
+[is=x-nature] {
+    -moz-transition:width 0.01s;
+    -webkit-transition:width 0.01s;
+    -o-transition:width 0.01s;
+    transition:width 0.01s;
+
+    min-height: 50px;
+    background:red;
+}
